@@ -1,0 +1,18 @@
+{
+  "global": {
+    "version": "v702"
+  },
+  "rules": {
+    "start_at_tab": {
+      "enabled": true
+    },
+    "method_parameter_names": {
+      "enabled": true,
+      "ignoreExceptions": true,
+      "importing": "^I._.*$",
+      "returning": "^R._.*$",
+      "changing": "^C._.*$",
+      "exporting": "^E._.*$"
+    }
+  }
+}
