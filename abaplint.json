@@ -3,16 +3,16 @@
     "version": "v702"
   },
   "rules": {
+    "keywords_upper": {
+      "enabled": true,
+      "ignoreExceptions": true
+    },
+    "line_length": {
+      "enabled": true,
+      "length": 80
+    },
     "start_at_tab": {
       "enabled": true
-    },
-    "method_parameter_names": {
-      "enabled": true,
-      "ignoreExceptions": true,
-      "importing": "^I._.*$",
-      "returning": "^R._.*$",
-      "changing": "^C._.*$",
-      "exporting": "^E._.*$"
     }
   }
 }
