@@ -1,13 +1,15 @@
-CLASS lcl_name_factory DEFINITION FINAL.
-  PUBLIC SECTION.
-    CLASS-METHODS get_greeting
-      IMPORTING
-        iv_name TYPE string
-      RETURNING
-        value(rv_greeting) TYPE string.
-ENDCLASS.
-CLASS lcl_name_factory IMPLEMENTATION.
-  METHOD get_greeting.
-   rv_greeting = |Hello { iv_name }|.
-  ENDMETHOD.
-ENDCLASS.
+class my_name_factory definition final.
+  public section.
+    class-methods get_greeting
+      importing
+        name type string
+      returning
+        value(rv_greeting) type string.
+    DATA mv_counter TYPE i.
+endclass.
+class my_name_factory implementation.
+  method get_greeting.
+   add 1 to mv_counter.
+   rv_greeting = |Hello { name }|.
+  endmethod.
+endclass.
