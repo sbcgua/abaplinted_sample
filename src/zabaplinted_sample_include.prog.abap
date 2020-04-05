@@ -10,6 +10,6 @@ endclass.
 class my_name_factory implementation.
   method get_greeting.
    add 1 to mv_counter.
-   rv_greeting = |Hello { name }|.
+   rv_greeting = |Hello { name }, { mv_counter }|.
   endmethod.
 endclass.
